@@ -312,7 +312,7 @@ export default function App() {
         setError(data.error || 'Processing failed. Check the backend logs.')
       }
     } catch (e) {
-      setError('Could not reach the backend. Is the FastAPI server running on port 8000?')
+      setError('Could not reach the backend.')
     } finally {
       setLoading(false)
     }
@@ -334,7 +334,7 @@ export default function App() {
             Faaya<span style={styles.wordmarkAccent}>.</span>
           </div>
           <div style={styles.tagline}>
-            Smart background removal + AI metadata generation for fashion e-commerce
+            Smart background removal 
           </div>
         </div>
         <div style={styles.healthDot(backendOk)}>
@@ -348,7 +348,7 @@ export default function App() {
           {/* ── Left: Upload + controls ── */}
           <div style={styles.leftPanel}>
             <div style={styles.card}>
-              <div style={styles.cardTitle}>Upload Garment Image</div>
+              <div style={styles.cardTitle}>Upload  Image</div>
               <UploadZone
                 selectedFile={file}
                 onFileSelect={handleFileSelect}
@@ -429,7 +429,7 @@ export default function App() {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        <span style={styles.footerText}>Built for Faaya — Smart Fashion Tech 🚀</span>
+        <span style={styles.footerText}>smart background remover 🚀</span>
         <div style={styles.techStack}>
           {['React', 'Vite', 'FastAPI', 'rembg', 'Gemini Vision', 'Pillow'].map(t => (
             <span key={t} style={styles.tech}>{t}</span>
