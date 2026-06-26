@@ -2,9 +2,8 @@ import { useState, useCallback, useEffect } from 'react'
 import UploadZone from './components/UploadZone'
 import MetadataPanel from './components/MetadataPanel'
 import StatsBar from './components/StatsBar'
-import.meta.env.VITE_API_URL
+const API_BASE = import.meta.env.VITE_API_URL || 'https://background-remover-backend-4.onrender.com'
 
-const API_BASE = '' // vite proxy handles /process, /stats
 
 const styles = {
   root: {
