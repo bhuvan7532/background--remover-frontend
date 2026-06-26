@@ -2,8 +2,7 @@ import { useState, useCallback, useEffect } from 'react'
 import UploadZone from './components/UploadZone'
 import MetadataPanel from './components/MetadataPanel'
 import StatsBar from './components/StatsBar'
-const API_BASE = import.meta.env.VITE_API_URL || 'https://background-remover-backend-4.onrender.com'
-
+const API_BASE = 'https://background-remover-backend-4.onrender.com'
 
 const styles = {
   root: {
